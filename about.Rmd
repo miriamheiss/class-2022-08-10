@@ -1,10 +1,21 @@
 ---
 title: "About this site"
 description: |
-  Some additional details about the website
+        This website is for a class about data visualization
 ---
+
+## About me!
+
+I'm [Miriam Heiss](https://www.miriamheiss.com/), and this is a website that I made for a [class](https://bootcamp.davidkane.info/). I play the organ, make soap, and occasionally sew! 
+
+## About this project!
+
+The data for this project came from the [New York Times](https://www.nytimes.com/interactive/2022/08/01/upshot/rich-poor-friendships.html). It is about the Economic Connectedness of counties around the United States.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+### What should the project show?
+
+The graphs that are included should show counties in the United States, and how connected to the economy they are, with factors such as population, and economy. 
