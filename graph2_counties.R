@@ -1,5 +1,5 @@
-graph2 <- ec |> 
-  mutate(state = str_remove(county_name, ".*, ")) |> 
+library(tidyverse)
+graph2 <- ec %>%
   group_by(state) |> 
   summarise(pop_state = sum(pop2018),
             avg_ec = mean(ec_county)) |> 
@@ -11,5 +11,7 @@ graph2 <- ec |>
   labs(y = "Average County Economic Connectedness",
        x = "State Population",
        title = "Economic Connectedness and Population in US States",
-       subtitle = "Biggger states have counties with lower average economic connectedness.")
+       subtitle = "Bigger states have counties with lower average economic connectedness.")
 graph2
+
+write_rds(graph2, "graph_two.rds")

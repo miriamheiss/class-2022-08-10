@@ -1,35 +1,30 @@
 ---
 title: "Economic Connectedness"
+
 description: |
-  Welcome to the website. I hope you enjoy it!
+  Counties around the United States: How economically connected are they?
 site: distill::distill_website
 ---
-```{r}
-
-```
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 ```
 
-```{r}
-ec <- read_csv("social_capital_county.csv") %>% 
-select(county, county_name, pop2018, ec_county) %>%  
-  drop_na() %>%  
-  mutate(state = str_remove(county_name, "*"))
-```
-
-```{r graph_one}
-source(graph1_counties)
-```
-
-```{r graph_two}
-
-```
-
-
 ```{r echo = FALSE}
+ec <- read_rds(file = "clean_data.rds")
+```
+
+```{r graph_one, echo = FALSE}
+read_rds(file = "graph_one.rds")
+```
+
+```{r graph_two, echo = FALSE}
+read_rds(file = "graph_two.rds")
+```
+
+
+```{r echo = FALSE, include = FALSE}
 read.csv("social_capital_county.csv")
 ```
 

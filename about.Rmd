@@ -1,5 +1,5 @@
 ---
-title: "About this site"
+title: "About the project and me!"
 description: |
         This website is for a class about data visualization
 ---
@@ -10,7 +10,7 @@ I'm [Miriam Heiss](https://www.miriamheiss.com/), and this is a website that I m
 
 ## About this project!
 
-The data for this project came from the [New York Times](https://www.nytimes.com/interactive/2022/08/01/upshot/rich-poor-friendships.html). It is about the Economic Connectedness of counties around the United States.
+The data for this project came from [Opportunity Insights](https://opportunityinsights.org/data/). It is about the Economic Connectedness of counties around the United States.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)

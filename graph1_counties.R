@@ -1,6 +1,6 @@
 
 # Look at missing data later.
-
+library(tidyverse)
 graph1 <- ec |> 
 ggplot(aes(x = pop2018, y = ec_county)) +
   geom_point() +
@@ -10,6 +10,9 @@ ggplot(aes(x = pop2018, y = ec_county)) +
   labs(y = "Economic Connectedness",
        x = "Population",
        title = "Economic Connectedness and Population in US Counties",
-       subtitle = "There is no relationship between population and economic connectedness in US counties.")
+       subtitle = "There is no relationship between population and economic\nconnectedness in US counties.")
 
 graph1
+
+write_rds(graph1, "graph_one.rds")
+
